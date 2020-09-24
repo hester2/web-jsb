@@ -1,0 +1,338 @@
+	#app {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		/*text-align: center;*/
+    width: 100%;
+    min-height: 100vh;
+		/*color: #2c3e50;*/
+
+	}
+
+	body,
+	p,
+	div,
+	ul,
+	li,
+	img,
+	span {
+		margin: 0 0;
+		padding: 0 0;
+		line-height: 1.5rem;
+		text-align: center;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.el-message{
+		z-index: 99999999999999999999999 !important;
+	}
+	.el-notification{
+		z-index: 99999999999999999999999 !important;
+	}
+
+	::-webkit-input-placeholder {
+		color: #eee;
+		font-size: 12px;
+	}
+
+	.gd-header-main {
+		box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+		position: relative;
+
+		.el-header,
+		.el-footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #333;
+			text-align: center;
+			line-height: 60px;
+			height: 60px;
+			width: 100%;
+			background-color: transparent;
+		}
+
+		.gd-header-card {
+			width: 1209px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.el-main {
+			background-color: #E9EEF3;
+			color: #333;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			line-height: 160px;
+			height: calc(100vh - 120px)
+		}
+
+		.el-header {
+			background-color: #fff;
+			overflow: visible;
+
+			img {
+				width: 126px;
+				height: 28px;
+				display: block;
+				margin-right: 10px;
+			}
+		}
+
+		.el-menu.el-menu--horizontal {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 857px;
+			border: none;
+		}
+
+		.el-button--mini,
+		.el-button--small {
+			border-radius: 0px 5px 5px 0px !important;
+		}
+	}
+
+	.el-main {
+		padding: 0px;
+	}
+  .gd-header-top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+  }
+
+  .gd-header-cp {
+    display: flex;
+    width: 1150px;
+    height: 30px;
+    line-height: 30px;
+    justify-content: space-between;
+  }
+
+  .gd-header-le {
+    font-size: 14px;
+    color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .gd-header-le span {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .gd-header-le span:nth-of-type(1) {
+    margin-right: 20px;
+  }
+
+  .gd-header-le:nth-of-type(1) span:nth-of-type(2) {
+    color: #EE7C51;
+  }
+
+  .gd-header-le:nth-of-type(2) span:nth-of-type(1) {
+    margin-right: 5px;
+  }
+
+	.gd-home-chart-t {
+		position: fixed;
+		right: 20px;
+		bottom: 150px;
+		width: 75px;
+		height: 75px;
+		border-radius: 50%;
+		background-color: #EE7C51;
+		color: #fff;
+		text-align: center;
+		z-index: 999999999;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: 36px;
+			height: 36px;
+		}
+	}
+
+	.el-button--primary {
+		background-color: #EE7C51;
+		border-color: #EE7C51;
+	}
+
+	.gd-ufin-ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #333333;
+	}
+
+
+		/* 状态颜色 gd-badgecom-already 红色gd-badgecom-stay */
+	.gd-badgecom-row{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gd-badgecom-already{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #FF7138;
+		display: block;
+		margin-right: 5px;
+	}
+	.gd-badgecom-stay{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #43A7FF;
+		display: block;
+		margin-right: 5px;
+	}
+	//已发货
+	.gd-badgecom-delivery{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #8ACF55;
+		display: block;
+		margin-right: 5px;
+	}
+	//待付款
+	.gd-badgecom-staypay{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #F19D38;
+		display: block;
+		margin-right: 5px;
+	}
+	.w-e-text p{
+		text-align: center;
+	}
+	.is-active{
+		color:#EE7C51 !important ;
+	}
+	.el-tabs__active-bar{
+		background-color: #EE7C51;
+	}
+	.el-tabs__item:hover{
+		color:#EE7C51 ;
+	}
+	/*分页样式*/
+	.el-pagination.is-background .el-pager li:not(.disabled).active{
+		    background-color: #EE7C51;
+	}
+
+	/*定义滚动条轨道 内阴影+圆角*/
+	.gd-chart-text::-webkit-scrollbar {
+		width: 8px;
+		/*height: 4px;*/
+	}
+
+	.gd-chart-text::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+		background: rgba(227, 227, 227, 0.8);
+	}
+
+	.gd-chart-text::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+		border-radius: 0;
+		background: rgba(227, 227, 227, 0.8);
+
+	}
+
+	.gd-chart-center::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	.gd-chart-center::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+    height: 80px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+	}
+
+	.gd-chart-center::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+		border-radius: 0;
+		background: rgba(227, 227, 227, 0.8);
+
+	}
+
+	.gd-chart-left::-webkit-scrollbar {
+		width: 6px;
+		/*height: 4px;*/
+	}
+
+	.gd-chart-left::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+    border-radius: 20px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		background: #D1C0C0;
+	}
+
+	.gd-chart-left::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		border-radius: 0px;
+		background: transparent;
+
+	}
+
+
+  .gd-chatlist-left::-webkit-scrollbar {
+    width: 10px;
+    /*height: 4px;*/
+  }
+
+  .gd-chatlist-left::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(227, 227, 227, 0.8);
+  }
+
+  .gd-chatlist-left::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+
+
+  .el-loading-spinner i{
+      color:#EE7C51;
+  }
+  .el-loading-spinner .el-loading-text{
+      color:#EE7C51;
+  }
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+      background-color: #EE7C51;
+      border-color: #EE7C51;
+    }
+    .el-checkbox__input.is-checked+.el-checkbox__label{
+      color: #333;
+    }
+    .el-button.is-disabled{
+      color: #C0C4CC !important;
+      cursor: not-allowed;
+      background-image: none;
+      background-color: #999999!important;
+      border-color: #999999!important;
+    }
